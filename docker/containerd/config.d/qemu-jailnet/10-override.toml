@@ -6,7 +6,7 @@
 ### the node_kata_* facts are static, so this renders to a fixed file.
 
 [hypervisor.qemu]
-kernel_params = "systemd.unified_cgroup_hierarchy=1"
+kernel_params = "systemd.unified_cgroup_hierarchy=1 sysctl.kernel.pid_max=32768"
 
 [agent.kata]
 debug_console_enabled = false
